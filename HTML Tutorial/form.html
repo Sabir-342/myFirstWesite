@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Form</title>
+</head>
+
+<body>
+    <form>
+        <label for="fname" type="text">First Name :</label>
+        <input type="text" id="fname" placeholder="Enter your first name">
+        <br><br>
+        <label for="lname" type="text">Last Name :</label>
+        <input type="text" id="lname" placeholder="Enter your last name">
+        <br><br>
+        <label for="email" type="email" placeholder="">Email :</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <br><br>
+        <label for="password" type="password">Password :</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <label type="Show Password"><input type="button" id="showPassword" value="Show Password"></label>
+        <br><br>
+        <label for="DOB" type="date">Date of Birth :</label>
+        <input type="date" id="DOB">
+        <br><br>
+        <label for="doa" type="date">Date of Admission :</label>
+        <input type="date" id="doa" required min="2022-01-01" max="2026-10-01">
+        <br><br>
+        <label for="age" type="number">Age :</label>
+        <input type="number" id="age" placeholder="Enter your age" min="1" max="100">
+        <br><br>
+        <label for="slider">Progress :</label>
+        <input type="range" id="slider" name="slider" min="0" max="100" value="30">
+        <br><br>
+        <label for="country">Country :</label>
+        <select id="country" name="country">
+            <option value="" selected>Select your country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+        </select>
+        <br><br>
+        <label for="gender">Gender :</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br><br>
+        <label>Known Languages :
+            <input type="checkbox" id="python" name="language" value="yes">
+            <label for="python">Python</label>
+            <input type="checkbox" id="javascript" name="language" value="yes">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="java" name="language" value="yes">
+            <label for="java">Java</label>
+            <input type="checkbox" id="cpp" name="language" value="yes">
+            <label for="cpp">C++</label>
+            <input type="checkbox" id="csharp" name="language" value="yes">
+            <label for="csharp">C#</label>
+        </label>
+        <br><br>
+        <label progress for="myprogress">Progress :</label>
+        <progress id="myprogress" value="70" max="100"></progress>
+        <br><br>
+        <label for="myfile">Upload Evidence :</label><br>
+        <input type="file" id="myfile" name="file">
+        <br><br>
+        <label for="feedback">Message :</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your message here"></textarea>
+
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <br><br>
+        <details>
+            <summary>FAQs</summary>
+            <dl>
+                <dt>
+                    <strong>1. Which fields are required?</strong>
+                </dt>
+                <dd>
+                    <p>Currently, only the Date of Admission field is required.</p>
+                </dd>
+
+
+                <dt>
+                    <strong>2. Can I reset the form?</strong>
+                </dt>
+                <dd>
+                    <p>Yes, click the Reset button to clear the form and restore its default values.</p>
+                </dd>
+
+                <dt>
+                    <strong>3. Can I upload a file?</strong>
+                </dt>
+                <dd>
+                    <p>Yes, use the Upload Evidence option to select a file from your device.</p>
+                </dd>
+
+
+                <dt>
+                    <strong>4. Is my password visible while typing?</strong>
+                </dt>
+                <dd>
+                    <p>No, the password field hides the characters by default.</p>
+                </dd>
+
+
+                <dt>
+                    <strong>5. Can I select multiple languages?</strong>
+                </dt>
+                <dd>
+                    <p>Yes, you can select multiple programming languages using the checkboxes.</p>
+                </dd>
+
+
+                <dt>
+                    <strong>6. What happens when I click Submit?</strong>
+                </dt>
+                <dd>
+                    <p>The browser attempts to submit the form, but a server is needed to process and store the
+                        information.</p>
+                </dd>
+
+            </dl>
+        </details>
+    </form>
+
+    <ul>
+        <li><a href="./index.html">Visit Home Page</a></li>
+    </ul>
+</body>
+
+</html>
